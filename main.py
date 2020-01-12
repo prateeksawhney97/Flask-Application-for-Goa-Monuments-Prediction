@@ -13,13 +13,13 @@ from random import randint
 
 
 IMAGE_FOLDER = 'static/'
-PROCESSED_FOLDER = 'static/processed/'
+#PROCESSED_FOLDER = 'static/processed/'
 #IMAGE_FOLDER = os.path.join('upload', 'images')
 
 
 app = Flask(__name__)  
 app.config['UPLOAD_FOLDER'] = IMAGE_FOLDER
-app.config['PROCESSED_FOLDER'] = PROCESSED_FOLDER
+#app.config['PROCESSED_FOLDER'] = PROCESSED_FOLDER
 
 
 @app.route('/')  
@@ -38,14 +38,18 @@ def success():
 		#file.save(filepath)
 		image_ext = cv2.imread(full_filename)
 		initial_image = np.copy(image_ext)
+		
+		
+		#hls_name = 'sample_'+char+'.jpg'
+		#cv2.imwrite('static/processed/'+hls_name, output_image_after_detecting)
+		#full_filename_processed = os.path.join(app.config['PROCESSED_FOLDER'], hls_name)		
+		final_text = 'Results after Detecting Monument in Input Image'
+		return render_template("success.html", name = final_text, img = full_filename)
+		
 
-		
-		hls_name = 'sample_'+char+'.jpg'
-		cv2.imwrite('static/processed/'+hls_name, output_image_after_detecting)
-		full_filename_processed = os.path.join(app.config['PROCESSED_FOLDER'], hls_name)		
-		final_text = 'Results after Detecting Lane Area over Input Image'
-		return render_template("success.html", name = final_text, img_in = full_filename, img = full_filename_processed)
-		
+@app.route('/info', methods = ['POST'])  
+def info():
+	return render_template("info.html")  
 
 
 if __name__ == '__main__':  
