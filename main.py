@@ -7,20 +7,19 @@ import os
 import pickle
 import cv2
 import glob
-
+import tensorflow as tf
+from keras.models import load_model
 from random import randint
 
+height = 240
+width = 256
+dim = (width, height)
 
 
 IMAGE_FOLDER = 'static/'
-#PROCESSED_FOLDER = 'static/processed/'
-#IMAGE_FOLDER = os.path.join('upload', 'images')
-
 
 app = Flask(__name__)  
 app.config['UPLOAD_FOLDER'] = IMAGE_FOLDER
-#app.config['PROCESSED_FOLDER'] = PROCESSED_FOLDER
-
 
 @app.route('/')  
 def upload():
@@ -30,21 +29,17 @@ def upload():
 def success():
 	if request.method == 'POST':
 		f = request.files['file']
-		#hls = (np.float32(image), cv2.COLOR_RGB2HLS)
 		f.save(os.path.join(app.config['UPLOAD_FOLDER'], f.filename))
-		#print(f.filename)
 		full_filename = os.path.join(app.config['UPLOAD_FOLDER'], f.filename)
-		#filepath = os.path.join(app.config['imgdir'], filename);
-		#file.save(filepath)
 		image_ext = cv2.imread(full_filename)
 		initial_image = np.copy(image_ext)
-		
-		
-		#hls_name = 'sample_'+char+'.jpg'
-		#cv2.imwrite('static/processed/'+hls_name, output_image_after_detecting)
-		#full_filename_processed = os.path.join(app.config['PROCESSED_FOLDER'], hls_name)		
+		imag = cv2.resize(initial_image, dim, interpolation = cv2.INTER_AREA)
+		model = load_model("model.h5")
+		imag = np.expand_dims(imag, axis=0)
+		pred = model.predict(imag)
+		str_data = str(pred)
 		final_text = 'Results after Detecting Monument in Input Image'
-		return render_template("success.html", name = final_text, img = full_filename)
+		return render_template("success.html", name = final_text, img = full_filename, nas = str_data)
 		
 
 @app.route('/info', methods = ['POST'])  
