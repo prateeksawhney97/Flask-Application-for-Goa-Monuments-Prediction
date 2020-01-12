@@ -11321,4 +11321,3125 @@ div.text_cell_render {
   outline: none;
   resize: none;
   width: inherit;
-  border-style: 
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered .rendered_html {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered .rendered_html td {
+  max-width: none;
+}
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+/*!
+*
+* IPython notebook webapp
+*
+*/
+@media (max-width: 767px) {
+  .notebook_app {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+#ipython-main-app {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+}
+div#notebook_panel {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+}
+div#notebook {
+  font-size: 14px;
+  line-height: 20px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
+  /* This spaces the page away from the edge of the notebook area */
+  padding-top: 20px;
+  margin: 0px;
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-height: 100%;
+}
+@media not print {
+  #notebook-container {
+    padding: 15px;
+    background-color: #fff;
+    min-height: 0;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  }
+}
+@media print {
+  #notebook-container {
+    width: 100%;
+  }
+}
+div.ui-widget-content {
+  border: 1px solid #ababab;
+  outline: none;
+}
+pre.dialog {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0.4em;
+  padding-left: 2em;
+}
+p.dialog {
+  padding: 0.2em;
+}
+/* Word-wrap output correctly.  This is the CSS3 spelling, though Firefox seems
+   to not honor it correctly.  Webkit browsers (Chrome, rekonq, Safari) do.
+ */
+pre,
+code,
+kbd,
+samp {
+  white-space: pre-wrap;
+}
+#fonttest {
+  font-family: monospace;
+}
+p {
+  margin-bottom: 0;
+}
+.end_space {
+  min-height: 100px;
+  transition: height .2s ease;
+}
+.notebook_app > #header {
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+@media not print {
+  .notebook_app {
+    background-color: #EEE;
+  }
+}
+kbd {
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  margin: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.jupyter-keybindings {
+  padding: 1px;
+  line-height: 24px;
+  border-bottom: 1px solid gray;
+}
+.jupyter-keybindings input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.jupyter-keybindings i {
+  padding: 6px;
+}
+.well code {
+  background-color: #ffffff;
+  border-color: #ababab;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/* CSS for the cell toolbar */
+.celltoolbar {
+  border: thin solid #CFCFCF;
+  border-bottom: none;
+  background: #EEE;
+  border-radius: 2px 2px 0px 0px;
+  width: 100%;
+  height: 29px;
+  padding-right: 4px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  /* Modern browsers */
+  justify-content: flex-end;
+  display: -webkit-flex;
+}
+@media print {
+  .celltoolbar {
+    display: none;
+  }
+}
+.ctb_hideshow {
+  display: none;
+  vertical-align: bottom;
+}
+/* ctb_show is added to the ctb_hideshow div to show the cell toolbar.
+   Cell toolbars are only shown when the ctb_global_show class is also set.
+*/
+.ctb_global_show .ctb_show.ctb_hideshow {
+  display: block;
+}
+.ctb_global_show .ctb_show + .input_area,
+.ctb_global_show .ctb_show + div.text_cell_input,
+.ctb_global_show .ctb_show ~ div.text_cell_render {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.ctb_global_show .ctb_show ~ div.text_cell_render {
+  border: 1px solid #cfcfcf;
+}
+.celltoolbar {
+  font-size: 87%;
+  padding-top: 3px;
+}
+.celltoolbar select {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+  width: inherit;
+  font-size: inherit;
+  height: 22px;
+  padding: 0px;
+  display: inline-block;
+}
+.celltoolbar select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.celltoolbar select::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.celltoolbar select:-ms-input-placeholder {
+  color: #999;
+}
+.celltoolbar select::-webkit-input-placeholder {
+  color: #999;
+}
+.celltoolbar select::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.celltoolbar select[disabled],
+.celltoolbar select[readonly],
+fieldset[disabled] .celltoolbar select {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.celltoolbar select[disabled],
+fieldset[disabled] .celltoolbar select {
+  cursor: not-allowed;
+}
+textarea.celltoolbar select {
+  height: auto;
+}
+select.celltoolbar select {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.celltoolbar select,
+select[multiple].celltoolbar select {
+  height: auto;
+}
+.celltoolbar label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.tags_button_container {
+  width: 100%;
+  display: flex;
+}
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+.tag-container > * {
+  margin: 0 4px;
+}
+.remove-tag-btn {
+  margin-left: 4px;
+}
+.tags-input {
+  display: flex;
+}
+.cell-tag:last-child:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  /* Fade to background color of cell toolbar */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #EEE);
+}
+.tags-input > * {
+  margin-left: 4px;
+}
+.cell-tag,
+.tags-input input,
+.tags-input button {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 1px;
+  box-shadow: none;
+  width: inherit;
+  font-size: inherit;
+  height: 22px;
+  line-height: 22px;
+  padding: 0px 4px;
+  display: inline-block;
+}
+.cell-tag:focus,
+.tags-input input:focus,
+.tags-input button:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.cell-tag::-moz-placeholder,
+.tags-input input::-moz-placeholder,
+.tags-input button::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.cell-tag:-ms-input-placeholder,
+.tags-input input:-ms-input-placeholder,
+.tags-input button:-ms-input-placeholder {
+  color: #999;
+}
+.cell-tag::-webkit-input-placeholder,
+.tags-input input::-webkit-input-placeholder,
+.tags-input button::-webkit-input-placeholder {
+  color: #999;
+}
+.cell-tag::-ms-expand,
+.tags-input input::-ms-expand,
+.tags-input button::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+.cell-tag[readonly],
+.tags-input input[readonly],
+.tags-input button[readonly],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.cell-tag[disabled],
+.tags-input input[disabled],
+.tags-input button[disabled],
+fieldset[disabled] .cell-tag,
+fieldset[disabled] .tags-input input,
+fieldset[disabled] .tags-input button {
+  cursor: not-allowed;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button {
+  height: auto;
+}
+select.cell-tag,
+select.tags-input input,
+select.tags-input button {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.cell-tag,
+textarea.tags-input input,
+textarea.tags-input button,
+select[multiple].cell-tag,
+select[multiple].tags-input input,
+select[multiple].tags-input button {
+  height: auto;
+}
+.cell-tag,
+.tags-input button {
+  padding: 0px 4px;
+}
+.cell-tag {
+  background-color: #fff;
+  white-space: nowrap;
+}
+.tags-input input[type=text]:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.completions {
+  position: absolute;
+  z-index: 110;
+  overflow: hidden;
+  border: 1px solid #ababab;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 6px 10px -1px #adadad;
+  box-shadow: 0px 6px 10px -1px #adadad;
+  line-height: 1;
+}
+.completions select {
+  background: white;
+  outline: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 110%;
+  color: #000;
+  width: auto;
+}
+.completions select option.context {
+  color: #286090;
+}
+#kernel_logo_widget .current_kernel_logo {
+  display: none;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  width: 32px;
+  height: 32px;
+}
+[dir="rtl"] #kernel_logo_widget {
+  float: left !important;
+  float: left;
+}
+.modal .modal-body .move-path {
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
+}
+.modal .modal-body .move-path .server-root {
+  padding-right: 20px;
+}
+.modal .modal-body .move-path .path-input {
+  flex: 1;
+}
+#menubar {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: 1px;
+}
+#menubar .navbar {
+  border-top: 1px;
+  border-radius: 0px 0px 2px 2px;
+  margin-bottom: 0px;
+}
+#menubar .navbar-toggle {
+  float: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+}
+#menubar .navbar-collapse {
+  clear: left;
+}
+[dir="rtl"] #menubar .navbar-toggle {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-collapse {
+  clear: right;
+}
+[dir="rtl"] #menubar .navbar-nav {
+  float: right;
+}
+[dir="rtl"] #menubar .nav {
+  padding-right: 0px;
+}
+[dir="rtl"] #menubar .navbar-nav > li {
+  float: right;
+}
+[dir="rtl"] #menubar .navbar-right {
+  float: left !important;
+}
+[dir="rtl"] ul.dropdown-menu {
+  text-align: right;
+  left: auto;
+}
+[dir="rtl"] ul#new-menu.dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.nav-wrapper {
+  border-bottom: 1px solid #e7e7e7;
+}
+i.menu-icon {
+  padding-top: 4px;
+}
+[dir="rtl"] i.menu-icon.pull-right {
+  float: left !important;
+  float: left;
+}
+ul#help_menu li a {
+  overflow: hidden;
+  padding-right: 2.2em;
+}
+ul#help_menu li a i {
+  margin-right: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a {
+  padding-left: 2.2em;
+}
+[dir="rtl"] ul#help_menu li a i {
+  margin-right: 0;
+  margin-left: -1.2em;
+}
+[dir="rtl"] ul#help_menu li a i.pull-right {
+  float: left !important;
+  float: left;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+[dir="rtl"] .dropdown-submenu > .dropdown-menu {
+  right: 100%;
+  margin-right: -1px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu > a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  content: "\f0da";
+  float: right;
+  color: #333333;
+  margin-top: 2px;
+  margin-right: -10px;
+}
+.dropdown-submenu > a:after.fa-pull-left {
+  margin-right: .3em;
+}
+.dropdown-submenu > a:after.fa-pull-right {
+  margin-left: .3em;
+}
+.dropdown-submenu > a:after.pull-left {
+  margin-right: .3em;
+}
+.dropdown-submenu > a:after.pull-right {
+  margin-left: .3em;
+}
+[dir="rtl"] .dropdown-submenu > a:after {
+  float: left;
+  content: "\f0d9";
+  margin-right: 0;
+  margin-left: -10px;
+}
+.dropdown-submenu:hover > a:after {
+  color: #262626;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+}
+#notification_area {
+  float: right !important;
+  float: right;
+  z-index: 10;
+}
+[dir="rtl"] #notification_area {
+  float: left !important;
+  float: left;
+}
+.indicator_area {
+  float: right !important;
+  float: right;
+  color: #777;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11px;
+  z-index: 10;
+  text-align: center;
+  width: auto;
+}
+[dir="rtl"] .indicator_area {
+  float: left !important;
+  float: left;
+}
+#kernel_indicator {
+  float: right !important;
+  float: right;
+  color: #777;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11px;
+  z-index: 10;
+  text-align: center;
+  width: auto;
+  border-left: 1px solid;
+}
+#kernel_indicator .kernel_indicator_name {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+[dir="rtl"] #kernel_indicator {
+  float: left !important;
+  float: left;
+  border-left: 0;
+  border-right: 1px solid;
+}
+#modal_indicator {
+  float: right !important;
+  float: right;
+  color: #777;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11px;
+  z-index: 10;
+  text-align: center;
+  width: auto;
+}
+[dir="rtl"] #modal_indicator {
+  float: left !important;
+  float: left;
+}
+#readonly-indicator {
+  float: right !important;
+  float: right;
+  color: #777;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 11px;
+  z-index: 10;
+  text-align: center;
+  width: auto;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: none;
+}
+.modal_indicator:before {
+  width: 1.28571429em;
+  text-align: center;
+}
+.edit_mode .modal_indicator:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f040";
+}
+.edit_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.edit_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
+}
+.edit_mode .modal_indicator:before.pull-left {
+  margin-right: .3em;
+}
+.edit_mode .modal_indicator:before.pull-right {
+  margin-left: .3em;
+}
+.command_mode .modal_indicator:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: ' ';
+}
+.command_mode .modal_indicator:before.fa-pull-left {
+  margin-right: .3em;
+}
+.command_mode .modal_indicator:before.fa-pull-right {
+  margin-left: .3em;
+}
+.command_mode .modal_indicator:before.pull-left {
+  margin-right: .3em;
+}
+.command_mode .modal_indicator:before.pull-right {
+  margin-left: .3em;
+}
+.kernel_idle_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f10c";
+}
+.kernel_idle_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_idle_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.kernel_idle_icon:before.pull-left {
+  margin-right: .3em;
+}
+.kernel_idle_icon:before.pull-right {
+  margin-left: .3em;
+}
+.kernel_busy_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f111";
+}
+.kernel_busy_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_busy_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.kernel_busy_icon:before.pull-left {
+  margin-right: .3em;
+}
+.kernel_busy_icon:before.pull-right {
+  margin-left: .3em;
+}
+.kernel_dead_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f1e2";
+}
+.kernel_dead_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_dead_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.kernel_dead_icon:before.pull-left {
+  margin-right: .3em;
+}
+.kernel_dead_icon:before.pull-right {
+  margin-left: .3em;
+}
+.kernel_disconnected_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f127";
+}
+.kernel_disconnected_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.kernel_disconnected_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.kernel_disconnected_icon:before.pull-left {
+  margin-right: .3em;
+}
+.kernel_disconnected_icon:before.pull-right {
+  margin-left: .3em;
+}
+.notification_widget {
+  color: #777;
+  z-index: 10;
+  background: rgba(240, 240, 240, 0.5);
+  margin-right: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.notification_widget:focus,
+.notification_widget.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.notification_widget:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.notification_widget:active,
+.notification_widget.active,
+.open > .dropdown-toggle.notification_widget {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.notification_widget:active:hover,
+.notification_widget.active:hover,
+.open > .dropdown-toggle.notification_widget:hover,
+.notification_widget:active:focus,
+.notification_widget.active:focus,
+.open > .dropdown-toggle.notification_widget:focus,
+.notification_widget:active.focus,
+.notification_widget.active.focus,
+.open > .dropdown-toggle.notification_widget.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.notification_widget:active,
+.notification_widget.active,
+.open > .dropdown-toggle.notification_widget {
+  background-image: none;
+}
+.notification_widget.disabled:hover,
+.notification_widget[disabled]:hover,
+fieldset[disabled] .notification_widget:hover,
+.notification_widget.disabled:focus,
+.notification_widget[disabled]:focus,
+fieldset[disabled] .notification_widget:focus,
+.notification_widget.disabled.focus,
+.notification_widget[disabled].focus,
+fieldset[disabled] .notification_widget.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.notification_widget .badge {
+  color: #fff;
+  background-color: #333;
+}
+.notification_widget.warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.notification_widget.warning:focus,
+.notification_widget.warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.notification_widget.warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.notification_widget.warning:active,
+.notification_widget.warning.active,
+.open > .dropdown-toggle.notification_widget.warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.notification_widget.warning:active:hover,
+.notification_widget.warning.active:hover,
+.open > .dropdown-toggle.notification_widget.warning:hover,
+.notification_widget.warning:active:focus,
+.notification_widget.warning.active:focus,
+.open > .dropdown-toggle.notification_widget.warning:focus,
+.notification_widget.warning:active.focus,
+.notification_widget.warning.active.focus,
+.open > .dropdown-toggle.notification_widget.warning.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.notification_widget.warning:active,
+.notification_widget.warning.active,
+.open > .dropdown-toggle.notification_widget.warning {
+  background-image: none;
+}
+.notification_widget.warning.disabled:hover,
+.notification_widget.warning[disabled]:hover,
+fieldset[disabled] .notification_widget.warning:hover,
+.notification_widget.warning.disabled:focus,
+.notification_widget.warning[disabled]:focus,
+fieldset[disabled] .notification_widget.warning:focus,
+.notification_widget.warning.disabled.focus,
+.notification_widget.warning[disabled].focus,
+fieldset[disabled] .notification_widget.warning.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.notification_widget.warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.notification_widget.success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.notification_widget.success:focus,
+.notification_widget.success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.notification_widget.success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.notification_widget.success:active,
+.notification_widget.success.active,
+.open > .dropdown-toggle.notification_widget.success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.notification_widget.success:active:hover,
+.notification_widget.success.active:hover,
+.open > .dropdown-toggle.notification_widget.success:hover,
+.notification_widget.success:active:focus,
+.notification_widget.success.active:focus,
+.open > .dropdown-toggle.notification_widget.success:focus,
+.notification_widget.success:active.focus,
+.notification_widget.success.active.focus,
+.open > .dropdown-toggle.notification_widget.success.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.notification_widget.success:active,
+.notification_widget.success.active,
+.open > .dropdown-toggle.notification_widget.success {
+  background-image: none;
+}
+.notification_widget.success.disabled:hover,
+.notification_widget.success[disabled]:hover,
+fieldset[disabled] .notification_widget.success:hover,
+.notification_widget.success.disabled:focus,
+.notification_widget.success[disabled]:focus,
+fieldset[disabled] .notification_widget.success:focus,
+.notification_widget.success.disabled.focus,
+.notification_widget.success[disabled].focus,
+fieldset[disabled] .notification_widget.success.focus {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.notification_widget.success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.notification_widget.info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.notification_widget.info:focus,
+.notification_widget.info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+.notification_widget.info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.notification_widget.info:active,
+.notification_widget.info.active,
+.open > .dropdown-toggle.notification_widget.info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.notification_widget.info:active:hover,
+.notification_widget.info.active:hover,
+.open > .dropdown-toggle.notification_widget.info:hover,
+.notification_widget.info:active:focus,
+.notification_widget.info.active:focus,
+.open > .dropdown-toggle.notification_widget.info:focus,
+.notification_widget.info:active.focus,
+.notification_widget.info.active.focus,
+.open > .dropdown-toggle.notification_widget.info.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.notification_widget.info:active,
+.notification_widget.info.active,
+.open > .dropdown-toggle.notification_widget.info {
+  background-image: none;
+}
+.notification_widget.info.disabled:hover,
+.notification_widget.info[disabled]:hover,
+fieldset[disabled] .notification_widget.info:hover,
+.notification_widget.info.disabled:focus,
+.notification_widget.info[disabled]:focus,
+fieldset[disabled] .notification_widget.info:focus,
+.notification_widget.info.disabled.focus,
+.notification_widget.info[disabled].focus,
+fieldset[disabled] .notification_widget.info.focus {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.notification_widget.info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.notification_widget.danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.notification_widget.danger:focus,
+.notification_widget.danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.notification_widget.danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.notification_widget.danger:active,
+.notification_widget.danger.active,
+.open > .dropdown-toggle.notification_widget.danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.notification_widget.danger:active:hover,
+.notification_widget.danger.active:hover,
+.open > .dropdown-toggle.notification_widget.danger:hover,
+.notification_widget.danger:active:focus,
+.notification_widget.danger.active:focus,
+.open > .dropdown-toggle.notification_widget.danger:focus,
+.notification_widget.danger:active.focus,
+.notification_widget.danger.active.focus,
+.open > .dropdown-toggle.notification_widget.danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.notification_widget.danger:active,
+.notification_widget.danger.active,
+.open > .dropdown-toggle.notification_widget.danger {
+  background-image: none;
+}
+.notification_widget.danger.disabled:hover,
+.notification_widget.danger[disabled]:hover,
+fieldset[disabled] .notification_widget.danger:hover,
+.notification_widget.danger.disabled:focus,
+.notification_widget.danger[disabled]:focus,
+fieldset[disabled] .notification_widget.danger:focus,
+.notification_widget.danger.disabled.focus,
+.notification_widget.danger[disabled].focus,
+fieldset[disabled] .notification_widget.danger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.notification_widget.danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+div#pager {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-height: 50%;
+  padding-top: 8px;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  /* Display over codemirror */
+  z-index: 100;
+  /* Hack which prevents jquery ui resizable from changing top. */
+  top: auto !important;
+}
+div#pager pre {
+  line-height: 1.21429em;
+  color: #000;
+  background-color: #f7f7f7;
+  padding: 0.4em;
+}
+div#pager #pager-button-area {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+div#pager #pager-contents {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+div#pager #pager-contents #pager-container {
+  position: relative;
+  padding: 15px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+div#pager .ui-resizable-handle {
+  top: 0px;
+  height: 8px;
+  background: #f7f7f7;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  /* This injects handle bars (a short, wide = symbol) for 
+        the resize handle. */
+}
+div#pager .ui-resizable-handle::after {
+  content: '';
+  top: 2px;
+  left: 50%;
+  height: 3px;
+  width: 30px;
+  margin-left: -15px;
+  position: absolute;
+  border-top: 1px solid #cfcfcf;
+}
+.quickhelp {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  line-height: 1.8em;
+}
+.shortcut_key {
+  display: inline-block;
+  width: 21ex;
+  text-align: right;
+  font-family: monospace;
+}
+.shortcut_descr {
+  display: inline-block;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+span.save_widget {
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 50%;
+  flex: 1;
+}
+span.save_widget span.filename {
+  height: 100%;
+  line-height: 1em;
+  margin-left: 16px;
+  border: none;
+  font-size: 146.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 2px;
+}
+span.save_widget span.filename:hover {
+  background-color: #e6e6e6;
+}
+[dir="rtl"] span.save_widget.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] span.save_widget span.filename {
+  margin-left: 0;
+  margin-right: 16px;
+}
+span.checkpoint_status,
+span.autosave_status {
+  font-size: small;
+  white-space: nowrap;
+  padding: 0 5px;
+}
+@media (max-width: 767px) {
+  span.save_widget {
+    font-size: small;
+    padding: 0 0 0 5px;
+  }
+  span.checkpoint_status,
+  span.autosave_status {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  span.checkpoint_status {
+    display: none;
+  }
+  span.autosave_status {
+    font-size: x-small;
+  }
+}
+.toolbar {
+  padding: 0px;
+  margin-left: -5px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.toolbar select,
+.toolbar label {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  display: inline;
+  font-size: 92%;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  padding: 0px;
+  padding-top: 3px;
+}
+.toolbar .btn {
+  padding: 2px 8px;
+}
+.toolbar .btn-group {
+  margin-top: 0px;
+  margin-left: 5px;
+}
+.toolbar-btn-label {
+  margin-left: 6px;
+}
+#maintoolbar {
+  margin-bottom: -3px;
+  margin-top: -8px;
+  border: 0px;
+  min-height: 27px;
+  margin-left: 0px;
+  padding-top: 11px;
+  padding-bottom: 3px;
+}
+#maintoolbar .navbar-text {
+  float: none;
+  vertical-align: middle;
+  text-align: right;
+  margin-left: 5px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+.select-xs {
+  height: 24px;
+}
+[dir="rtl"] .btn-group > .btn,
+.btn-group-vertical > .btn {
+  float: right;
+}
+.pulse,
+.dropdown-menu > li > a.pulse,
+li.pulse > a.dropdown-toggle,
+li.pulse.open > a.dropdown-toggle {
+  background-color: #F37626;
+  color: white;
+}
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
+/** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
+ * of chance of beeing generated from the ../less/[samename].less file, you can
+ * try to get back the less file by reverting somme commit in history
+ **/
+/*
+ * We'll try to get something pretty, so we
+ * have some strange css to have the scroll bar on
+ * the left with fix button on the top right of the tooltip
+ */
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*properties of tooltip after "expand"*/
+.bigtooltip {
+  overflow: auto;
+  height: 200px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-property: height;
+  -moz-transition-duration: 500ms;
+  transition-property: height;
+  transition-duration: 500ms;
+}
+/*properties of tooltip before "expand"*/
+.smalltooltip {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-property: height;
+  -moz-transition-duration: 500ms;
+  transition-property: height;
+  transition-duration: 500ms;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 80px;
+}
+.tooltipbuttons {
+  position: absolute;
+  padding-right: 15px;
+  top: 0px;
+  right: 0px;
+}
+.tooltiptext {
+  /*avoid the button to overlap on some docstring*/
+  padding-right: 30px;
+}
+.ipython_tooltip {
+  max-width: 700px;
+  /*fade-in animation when inserted*/
+  -webkit-animation: fadeOut 400ms;
+  -moz-animation: fadeOut 400ms;
+  animation: fadeOut 400ms;
+  -webkit-animation: fadeIn 400ms;
+  -moz-animation: fadeIn 400ms;
+  animation: fadeIn 400ms;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  overflow: visible;
+  border: #ababab 1px solid;
+  outline: none;
+  padding: 3px;
+  margin: 0px;
+  padding-left: 7px;
+  font-family: monospace;
+  min-height: 50px;
+  -moz-box-shadow: 0px 6px 10px -1px #adadad;
+  -webkit-box-shadow: 0px 6px 10px -1px #adadad;
+  box-shadow: 0px 6px 10px -1px #adadad;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1000;
+}
+.ipython_tooltip a {
+  float: right;
+}
+.ipython_tooltip .tooltiptext pre {
+  border: 0;
+  border-radius: 0;
+  font-size: 100%;
+  background-color: #f7f7f7;
+}
+.pretooltiparrow {
+  left: 0px;
+  margin: 0px;
+  top: -16px;
+  width: 40px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+}
+.pretooltiparrow:before {
+  background-color: #f7f7f7;
+  border: 1px #ababab solid;
+  z-index: 11;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+ul.typeahead-list i {
+  margin-left: -10px;
+  width: 18px;
+}
+[dir="rtl"] ul.typeahead-list i {
+  margin-left: 0;
+  margin-right: -10px;
+}
+ul.typeahead-list {
+  max-height: 80vh;
+  overflow: auto;
+}
+ul.typeahead-list > li > a {
+  /** Firefox bug **/
+  /* see https://github.com/jupyter/notebook/issues/559 */
+  white-space: normal;
+}
+ul.typeahead-list  > li > a.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .typeahead-list {
+  text-align: right;
+}
+.cmd-palette .modal-body {
+  padding: 7px;
+}
+.cmd-palette form {
+  background: white;
+}
+.cmd-palette input {
+  outline: none;
+}
+.no-shortcut {
+  min-width: 20px;
+  color: transparent;
+}
+[dir="rtl"] .no-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .command-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+.command-shortcut:before {
+  content: "(command mode)";
+  padding-right: 3px;
+  color: #777777;
+}
+.edit-shortcut:before {
+  content: "(edit)";
+  padding-right: 3px;
+  color: #777777;
+}
+[dir="rtl"] .edit-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+#find-and-replace #replace-preview .match,
+#find-and-replace #replace-preview .insert {
+  background-color: #BBDEFB;
+  border-color: #90CAF9;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+}
+[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
+  border-left: none;
+}
+[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
+  border-right: none;
+}
+#find-and-replace #replace-preview .replace .match {
+  background-color: #FFCDD2;
+  border-color: #EF9A9A;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview .replace .insert {
+  background-color: #C8E6C9;
+  border-color: #A5D6A7;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview {
+  max-height: 60vh;
+  overflow: auto;
+}
+#find-and-replace #replace-preview pre {
+  padding: 5px 10px;
+}
+.terminal-app {
+  background: #EEE;
+}
+.terminal-app #header {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+.terminal-app .terminal {
+  width: 100%;
+  float: left;
+  font-family: monospace;
+  color: white;
+  background: black;
+  padding: 0.4em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+}
+.terminal-app .terminal,
+.terminal-app .terminal dummy-screen {
+  line-height: 1em;
+  font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
+}
+.terminal-app .terminal-cursor {
+  color: black;
+  background: white;
+}
+.terminal-app #terminado-container {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.min.css.map */
+    </style>
+<style type="text/css">
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+    </style>
+
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+body {
+  overflow: visible;
+  padding: 8px;
+}
+
+div#notebook {
+  overflow: visible;
+  border-top: none;
+}@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+}
+</style>
+
+<!-- Custom stylesheet, it must be in the same directory as the html file -->
+<link rel="stylesheet" href="custom.css">
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration --></head>
+<body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># linear algebra</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># data processing, CSV file I/O (e.g. pd.read_csv)</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">random</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="k">for</span> <span class="n">dirname</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s1">&#39;/kaggle/input&#39;</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/kaggle/input/images/train.csv
+/kaggle/input/images/IMG/d_112.jpeg
+/kaggle/input/images/IMG/v_28.jpeg
+/kaggle/input/images/IMG/a_20.jpeg
+/kaggle/input/images/IMG/l_30.jpeg
+/kaggle/input/images/IMG/a_22.jpeg
+/kaggle/input/images/IMG/a_43.jpeg
+/kaggle/input/images/IMG/f_27.jpeg
+/kaggle/input/images/IMG/a_34.jpeg
+/kaggle/input/images/IMG/l_76.jpeg
+/kaggle/input/images/IMG/f_39.jpeg
+/kaggle/input/images/IMG/d_68.jpeg
+/kaggle/input/images/IMG/d_114.jpeg
+/kaggle/input/images/IMG/v_75.jpeg
+/kaggle/input/images/IMG/v_46.jpeg
+/kaggle/input/images/IMG/l_60.jpeg
+/kaggle/input/images/IMG/d_67.jpeg
+/kaggle/input/images/IMG/d_100.jpeg
+/kaggle/input/images/IMG/f_51.jpeg
+/kaggle/input/images/IMG/d_38.jpeg
+/kaggle/input/images/IMG/l_119.jpeg
+/kaggle/input/images/IMG/v_70.jpeg
+/kaggle/input/images/IMG/a_40.jpeg
+/kaggle/input/images/IMG/f_37.jpeg
+/kaggle/input/images/IMG/d_94.jpeg
+/kaggle/input/images/IMG/f_67.jpeg
+/kaggle/input/images/IMG/l_81.jpeg
+/kaggle/input/images/IMG/d_86.jpeg
+/kaggle/input/images/IMG/l_114.jpeg
+/kaggle/input/images/IMG/a_24.jpeg
+/kaggle/input/images/IMG/d_14.jpeg
+/kaggle/input/images/IMG/v_48.jpeg
+/kaggle/input/images/IMG/a_42.jpeg
+/kaggle/input/images/IMG/l_88.jpeg
+/kaggle/input/images/IMG/f_57.jpeg
+/kaggle/input/images/IMG/v_52.jpeg
+/kaggle/input/images/IMG/v_33.jpeg
+/kaggle/input/images/IMG/d_33.jpeg
+/kaggle/input/images/IMG/d_59.jpeg
+/kaggle/input/images/IMG/f_78.jpeg
+/kaggle/input/images/IMG/v_34.jpeg
+/kaggle/input/images/IMG/d_7.jpeg
+/kaggle/input/images/IMG/f_16.jpeg
+/kaggle/input/images/IMG/d_34.jpeg
+/kaggle/input/images/IMG/a_29.jpeg
+/kaggle/input/images/IMG/d_73.jpeg
+/kaggle/input/images/IMG/d_85.jpeg
+/kaggle/input/images/IMG/d_52.jpeg
+/kaggle/input/images/IMG/a_25.jpeg
+/kaggle/input/images/IMG/f_74.jpeg
+/kaggle/input/images/IMG/l_40.jpeg
+/kaggle/input/images/IMG/v_56.jpeg
+/kaggle/input/images/IMG/l_37.jpeg
+/kaggle/input/images/IMG/d_53.jpeg
+/kaggle/input/images/IMG/a_35.jpeg
+/kaggle/input/images/IMG/l_50.jpeg
+/kaggle/input/images/IMG/l_45.jpeg
+/kaggle/input/images/IMG/f_45.jpeg
+/kaggle/input/images/IMG/d_36.jpeg
+/kaggle/input/images/IMG/a_7.jpeg
+/kaggle/input/images/IMG/l_47.jpeg
+/kaggle/input/images/IMG/d_61.jpeg
+/kaggle/input/images/IMG/v_59.jpeg
+/kaggle/input/images/IMG/a_3.jpeg
+/kaggle/input/images/IMG/l_31.jpeg
+/kaggle/input/images/IMG/l_65.jpeg
+/kaggle/input/images/IMG/l_71.jpeg
+/kaggle/input/images/IMG/l_10.jpeg
+/kaggle/input/images/IMG/d_93.jpeg
+/kaggle/input/images/IMG/f_66.jpeg
+/kaggle/input/images/IMG/d_39.jpeg
+/kaggle/input/images/IMG/d_77.jpeg
+/kaggle/input/images/IMG/d_71.jpeg
+/kaggle/input/images/IMG/v_12.jpeg
+/kaggle/input/images/IMG/l_96.jpeg
+/kaggle/input/images/IMG/d_1.jpeg
+/kaggle/input/images/IMG/f_58.jpeg
+/kaggle/input/images/IMG/l_38.jpeg
+/kaggle/input/images/IMG/l_27.jpeg
+/kaggle/input/images/IMG/v_68.jpeg
+/kaggle/input/images/IMG/l_90.jpeg
+/kaggle/input/images/IMG/a_14.jpeg
+/kaggle/input/images/IMG/d_95.jpeg
+/kaggle/input/images/IMG/l_63.jpeg
+/kaggle/input/images/IMG/v_43.jpeg
+/kaggle/input/images/IMG/d_104.jpeg
+/kaggle/input/images/IMG/d_60.jpeg
+/kaggle/input/images/IMG/v_7.jpeg
+/kaggle/input/images/IMG/d_111.jpeg
+/kaggle/input/images/IMG/d_110.jpeg
+/kaggle/input/images/IMG/d_11.jpeg
+/kaggle/input/images/IMG/l_70.jpeg
+/kaggle/input/images/IMG/l_118.jpeg
+/kaggle/input/images/IMG/l_53.jpeg
+/kaggle/input/images/IMG/l_84.jpeg
+/kaggle/input/images/IMG/l_55.jpeg
+/kaggle/input/images/IMG/v_73.jpeg
+/kaggle/input/images/IMG/v_57.jpeg
+/kaggle/input/images/IMG/v_44.jpeg
+/kaggle/input/images/IMG/d_2.jpeg
+/kaggle/input/images/IMG/v_49.jpeg
+/kaggle/input/images/IMG/l_77.jpeg
+/kaggle/input/images/IMG/l_64.jpeg
+/kaggle/input/images/IMG/f_59.jpeg
+/kaggle/input/images/IMG/d_41.jpeg
+/kaggle/input/images/IMG/d_23.jpeg
+/kaggle/input/images/IMG/d_76.jpeg
+/kaggle/input/images/IMG/d_12.jpeg
+/kaggle/input/images/IMG/v_61.jpeg
+/kaggle/input/images/IMG/f_44.jpeg
+/kaggle/input/images/IMG/f_53.jpeg
+/kaggle/input/images/IMG/f_4.jpeg
+/kaggle/input/images/IMG/v_71.jpeg
+/kaggle/input/images/IMG/l_11.jpeg
+/kaggle/input/images/IMG/v_76.jpeg
+/kaggle/input/images/IMG/l_48.jpeg
+/kaggle/input/images/IMG/d_87.jpeg
+/kaggle/input/images/IMG/a_1.jpeg
+/kaggle/input/images/IMG/f_75.jpeg
+/kaggle/input/images/IMG/l_26.jpeg
+/kaggle/input/images/IMG/l_29.jpeg
+/kaggle/input/images/IMG/f_5.jpeg
+/kaggle/input/images/IMG/v_66.jpeg
+/kaggle/input/images/IMG/a_5.jpeg
+/kaggle/input/images/IMG/d_108.jpeg
+/kaggle/input/images/IMG/d_82.jpeg
+/kaggle/input/images/IMG/d_96.jpeg
+/kaggle/input/images/IMG/l_9.jpeg
+/kaggle/input/images/IMG/d_102.jpeg
+/kaggle/input/images/IMG/l_73.jpeg
+/kaggle/input/images/IMG/l_52.jpeg
+/kaggle/input/images/IMG/l_3.jpeg
+/kaggle/input/images/IMG/v_27.jpeg
+/kaggle/input/images/IMG/a_37.jpeg
+/kaggle/input/images/IMG/v_62.jpeg
+/kaggle/input/images/IMG/d_25.jpeg
+/kaggle/input/images/IMG/v_1.jpeg
+/kaggle/input/images/IMG/d_58.jpeg
+/kaggle/input/images/IMG/a_27.jpeg
+/kaggle/input/images/IMG/l_112.jpeg
+/kaggle/input/images/IMG/f_17.jpeg
+/kaggle/input/images/IMG/f_12.jpeg
+/kaggle/input/images/IMG/f_15.jpeg
+/kaggle/input/images/IMG/l_20.jpeg
+/kaggle/input/images/IMG/l_97.jpeg
+/kaggle/input/images/IMG/f_29.jpeg
+/kaggle/input/images/IMG/l_59.jpeg
+/kaggle/input/images/IMG/l_116.jpeg
+/kaggle/input/images/IMG/l_24.jpeg
+/kaggle/input/images/IMG/d_43.jpeg
+/kaggle/input/images/IMG/v_21.jpeg
+/kaggle/input/images/IMG/l_17.jpeg
+/kaggle/input/images/IMG/v_31.jpeg
+/kaggle/input/images/IMG/l_16.jpeg
+/kaggle/input/images/IMG/v_4.jpeg
+/kaggle/input/images/IMG/d_3.jpeg
+/kaggle/input/images/IMG/d_20.jpeg
+/kaggle/input/images/IMG/d_35.jpeg
+/kaggle/input/images/IMG/d_5.jpeg
+/kaggle/input/images/IMG/l_113.jpeg
+/kaggle/input/images/IMG/f_30.jpeg
+/kaggle/input/images/IMG/d_62.jpeg
+/kaggle/input/images/IMG/d_99.jpeg
+/kaggle/input/images/IMG/d_51.jpeg
+/kaggle/input/images/IMG/d_19.jpeg
+/kaggle/input/images/IMG/v_18.jpeg
+/kaggle/input/images/IMG/d_18.jpeg
+/kaggle/input/images/IMG/d_49.jpeg
+/kaggle/input/images/IMG/d_46.jpeg
+/kaggle/input/images/IMG/v_42.jpeg
+/kaggle/input/images/IMG/l_39.jpeg
+/kaggle/input/images/IMG/f_65.jpeg
+/kaggle/input/images/IMG/l_19.jpeg
+/kaggle/input/images/IMG/d_15.jpeg
+/kaggle/input/images/IMG/d_22.jpeg
+/kaggle/input/images/IMG/d_24.jpeg
+/kaggle/input/images/IMG/l_18.jpeg
+/kaggle/input/images/IMG/a_9.jpeg
+/kaggle/input/images/IMG/f_79.jpeg
+/kaggle/input/images/IMG/l_13.jpeg
+/kaggle/input/images/IMG/l_98.jpeg
+/kaggle/input/images/IMG/a_28.jpeg
+/kaggle/input/images/IMG/a_13.jpeg
+/kaggle/input/images/IMG/d_84.jpeg
+/kaggle/input/images/IMG/v_40.jpeg
+/kaggle/input/images/IMG/f_8.jpeg
+/kaggle/input/images/IMG/v_36.jpeg
+/kaggle/input/images/IMG/a_10.jpeg
+/kaggle/input/images/IMG/l_2.jpeg
+/kaggle/input/images/IMG/d_47.jpeg
+/kaggle/input/images/IMG/d_63.jpeg
+/kaggle/input/images/IMG/l_61.jpeg
+/kaggle/input/images/IMG/l_67.jpeg
+/kaggle/input/images/IMG/f_40.jpeg
+/kaggle/input/images/IMG/d_10.jpeg
+/kaggle/input/images/IMG/a_23.jpeg
+/kaggle/input/images/IMG/l_34.jpeg
+/kaggle/input/images/IMG/l_41.jpeg
+/kaggle/input/images/IMG/f_9.jpeg
+/kaggle/input/images/IMG/v_6.jpeg
+/kaggle/input/images/IMG/a_18.jpeg
+/kaggle/input/images/IMG/f_6.jpeg
+/kaggle/input/images/IMG/v_26.jpeg
+/kaggle/input/images/IMG/f_26.jpeg
+/kaggle/input/images/IMG/d_8.jpeg
+/kaggle/input/images/IMG/l_4.jpeg
+/kaggle/input/images/IMG/a_41.jpeg
+/kaggle/input/images/IMG/v_45.jpeg
+/kaggle/input/images/IMG/d_28.jpeg
+/kaggle/input/images/IMG/d_32.jpeg
+/kaggle/input/images/IMG/d_89.jpeg
+/kaggle/input/images/IMG/f_25.jpeg
+/kaggle/input/images/IMG/f_13.jpeg
+/kaggle/input/images/IMG/a_36.jpeg
+/kaggle/input/images/IMG/d_75.jpeg
+/kaggle/input/images/IMG/l_1.jpeg
+/kaggle/input/images/IMG/a_11.jpeg
+/kaggle/input/images/IMG/l_66.jpeg
+/kaggle/input/images/IMG/a_15.jpeg
+/kaggle/input/images/IMG/l_14.jpeg
+/kaggle/input/images/IMG/v_72.jpeg
+/kaggle/input/images/IMG/l_83.jpeg
+/kaggle/input/images/IMG/d_64.jpeg
+/kaggle/input/images/IMG/d_55.jpeg
+/kaggle/input/images/IMG/l_33.jpeg
+/kaggle/input/images/IMG/l_104.jpeg
+/kaggle/input/images/IMG/l_69.jpeg
+/kaggle/input/images/IMG/d_17.jpeg
+/kaggle/input/images/IMG/v_30.jpeg
+/kaggle/input/images/IMG/d_103.jpeg
+/kaggle/input/images/IMG/l_12.jpeg
+/kaggle/input/images/IMG/a_39.jpeg
+/kaggle/input/images/IMG/f_3.jpeg
+/kaggle/input/images/IMG/v_25.jpeg
+/kaggle/input/images/IMG/l_35.jpeg
+/kaggle/input/images/IMG/f_31.jpeg
+/kaggle/input/images/IMG/f_7.jpeg
+/kaggle/input/images/IMG/l_6.jpeg
+/kaggle/input/images/IMG/v_2.jpeg
+/kaggle/input/images/IMG/l_92.jpeg
+/kaggle/input/images/IMG/l_108.jpeg
+/kaggle/input/images/IMG/l_44.jpeg
+/kaggle/input/images/IMG/f_80.jpeg
+/kaggle/input/images/IMG/d_65.jpeg
+/kaggle/input/images/IMG/v_29.jpeg
+/kaggle/input/images/IMG/v_53.jpeg
+/kaggle/input/images/IMG/v_15.jpeg
+/kaggle/input/images/IMG/v_32.jpeg
+/kaggle/input/images/IMG/l_15.jpeg
+/kaggle/input/images/IMG/l_107.jpeg
+/kaggle/input/images/IMG/f_49.jpeg
+/kaggle/input/images/IMG/f_55.jpeg
+/kaggle/input/images/IMG/f_56.jpeg
+/kaggle/input/images/IMG/d_97.jpeg
+/kaggle/input/images/IMG/d_70.jpeg
+/kaggle/input/images/IMG/d_105.jpeg
+/kaggle/input/images/IMG/d_48.jpeg
+/kaggle/input/images/IMG/d_101.jpeg
+/kaggle/input/images/IMG/v_20.jpeg
+/kaggle/input/images/IMG/v_38.jpeg
+/kaggle/input/images/IMG/d_90.jpeg
+/kaggle/input/images/IMG/v_58.jpeg
+/kaggle/input/images/IMG/v_51.jpeg
+/kaggle/input/images/IMG/d_21.jpeg
+/kaggle/input/images/IMG/f_64.jpeg
+/kaggle/input/images/IMG/v_9.jpeg
+/kaggle/input/images/IMG/l_32.jpeg
+/kaggle/input/images/IMG/f_35.jpeg
+/kaggle/input/images/IMG/a_12.jpeg
+/kaggle/input/images/IMG/v_41.jpeg
+/kaggle/input/images/IMG/v_13.jpeg
+/kaggle/input/images/IMG/a_31.jpeg
+/kaggle/input/images/IMG/d_98.jpeg
+/kaggle/input/images/IMG/d_57.jpeg
+/kaggle/input/images/IMG/f_60.jpeg
+/kaggle/input/images/IMG/v_67.jpeg
+/kaggle/input/images/IMG/f_43.jpeg
+/kaggle/input/images/IMG/f_14.jpeg
+/kaggle/input/images/IMG/l_58.jpeg
+/kaggle/input/images/IMG/v_35.jpeg
+/kaggle/input/images/IMG/d_83.jpeg
+/kaggle/input/images/IMG/a_6.jpeg
+/kaggle/input/images/IMG/l_93.jpeg
+/kaggle/input/images/IMG/d_91.jpeg
+/kaggle/input/images/IMG/f_11.jpeg
+/kaggle/input/images/IMG/d_92.jpeg
+/kaggle/input/images/IMG/l_46.jpeg
+/kaggle/input/images/IMG/l_111.jpeg
+/kaggle/input/images/IMG/d_74.jpeg
+/kaggle/input/images/IMG/l_91.jpeg
+/kaggle/input/images/IMG/d_72.jpeg
+/kaggle/input/images/IMG/d_13.jpeg
+/kaggle/input/images/IMG/l_102.jpeg
+/kaggle/input/images/IMG/f_72.jpeg
+/kaggle/input/images/IMG/v_23.jpeg
+/kaggle/input/images/IMG/l_78.jpeg
+/kaggle/input/images/IMG/l_72.jpeg
+/kaggle/input/images/IMG/f_46.jpeg
+/kaggle/input/images/IMG/d_6.jpeg
+/kaggle/input/images/IMG/f_24.jpeg
+/kaggle/input/images/IMG/l_42.jpeg
+/kaggle/input/images/IMG/l_86.jpeg
+/kaggle/input/images/IMG/l_115.jpeg
+/kaggle/input/images/IMG/d_88.jpeg
+/kaggle/input/images/IMG/v_54.jpeg
+/kaggle/input/images/IMG/d_16.jpeg
+/kaggle/input/images/IMG/f_69.jpeg
+/kaggle/input/images/IMG/a_16.jpeg
+/kaggle/input/images/IMG/f_10.jpeg
+/kaggle/input/images/IMG/a_33.jpeg
+/kaggle/input/images/IMG/a_32.jpeg
+/kaggle/input/images/IMG/f_77.jpeg
+/kaggle/input/images/IMG/d_78.jpeg
+/kaggle/input/images/IMG/f_47.jpeg
+/kaggle/input/images/IMG/l_95.jpeg
+/kaggle/input/images/IMG/f_70.jpeg
+/kaggle/input/images/IMG/a_8.jpeg
+/kaggle/input/images/IMG/d_79.jpeg
+/kaggle/input/images/IMG/l_87.jpeg
+/kaggle/input/images/IMG/l_5.jpeg
+/kaggle/input/images/IMG/v_3.jpeg
+/kaggle/input/images/IMG/d_30.jpeg
+/kaggle/input/images/IMG/l_8.jpeg
+/kaggle/input/images/IMG/l_80.jpeg
+/kaggle/input/images/IMG/v_60.jpeg
+/kaggle/input/images/IMG/d_44.jpeg
+/kaggle/input/images/IMG/f_73.jpeg
+/kaggle/input/images/IMG/l_22.jpeg
+/kaggle/input/images/IMG/l_82.jpeg
+/kaggle/input/images/IMG/v_69.jpeg
+/kaggle/input/images/IMG/f_48.jpeg
+/kaggle/input/images/IMG/l_106.jpeg
+/kaggle/input/images/IMG/a_44.jpeg
+/kaggle/input/images/IMG/f_2.jpeg
+/kaggle/input/images/IMG/a_26.jpeg
+/kaggle/input/images/IMG/l_7.jpeg
+/kaggle/input/images/IMG/l_54.jpeg
+/kaggle/input/images/IMG/v_5.jpeg
+/kaggle/input/images/IMG/d_66.jpeg
+/kaggle/input/images/IMG/l_56.jpeg
+/kaggle/input/images/IMG/d_40.jpeg
+/kaggle/input/images/IMG/l_99.jpeg
+/kaggle/input/images/IMG/d_4.jpeg
+/kaggle/input/images/IMG/v_50.jpeg
+/kaggle/input/images/IMG/d_80.jpeg
+/kaggle/input/images/IMG/l_57.jpeg
+/kaggle/input/images/IMG/v_8.jpeg
+/kaggle/input/images/IMG/l_85.jpeg
+/kaggle/input/images/IMG/f_32.jpeg
+/kaggle/input/images/IMG/f_18.jpeg
+/kaggle/input/images/IMG/l_94.jpeg
+/kaggle/input/images/IMG/a_38.jpeg
+/kaggle/input/images/IMG/f_71.jpeg
+/kaggle/input/images/IMG/f_33.jpeg
+/kaggle/input/images/IMG/v_37.jpeg
+/kaggle/input/images/IMG/d_27.jpeg
+/kaggle/input/images/IMG/l_21.jpeg
+/kaggle/input/images/IMG/l_75.jpeg
+/kaggle/input/images/IMG/f_1.jpeg
+/kaggle/input/images/IMG/l_89.jpeg
+/kaggle/input/images/IMG/f_42.jpeg
+/kaggle/input/images/IMG/l_74.jpeg
+/kaggle/input/images/IMG/d_42.jpeg
+/kaggle/input/images/IMG/l_49.jpeg
+/kaggle/input/images/IMG/d_26.jpeg
+/kaggle/input/images/IMG/v_16.jpeg
+/kaggle/input/images/IMG/d_9.jpeg
+/kaggle/input/images/IMG/l_109.jpeg
+/kaggle/input/images/IMG/d_113.jpeg
+/kaggle/input/images/IMG/l_28.jpeg
+/kaggle/input/images/IMG/d_109.jpeg
+/kaggle/input/images/IMG/v_11.jpeg
+/kaggle/input/images/IMG/a_2.jpeg
+/kaggle/input/images/IMG/l_79.jpeg
+/kaggle/input/images/IMG/v_74.jpeg
+/kaggle/input/images/IMG/l_103.jpeg
+/kaggle/input/images/IMG/d_56.jpeg
+/kaggle/input/images/IMG/v_63.jpeg
+/kaggle/input/images/IMG/v_39.jpeg
+/kaggle/input/images/IMG/l_62.jpeg
+/kaggle/input/images/IMG/d_45.jpeg
+/kaggle/input/images/IMG/f_28.jpeg
+/kaggle/input/images/IMG/l_101.jpeg
+/kaggle/input/images/IMG/d_106.jpeg
+/kaggle/input/images/IMG/v_22.jpeg
+/kaggle/input/images/IMG/d_29.jpeg
+/kaggle/input/images/IMG/f_61.jpeg
+/kaggle/input/images/IMG/l_105.jpeg
+/kaggle/input/images/IMG/v_14.jpeg
+/kaggle/input/images/IMG/l_43.jpeg
+/kaggle/input/images/IMG/d_50.jpeg
+/kaggle/input/images/IMG/d_37.jpeg
+/kaggle/input/images/IMG/v_47.jpeg
+/kaggle/input/images/IMG/v_55.jpeg
+/kaggle/input/images/IMG/d_107.jpeg
+/kaggle/input/images/IMG/l_51.jpeg
+/kaggle/input/images/IMG/a_21.jpeg
+/kaggle/input/images/IMG/d_81.jpeg
+/kaggle/input/images/IMG/f_63.jpeg
+/kaggle/input/images/IMG/f_76.jpeg
+/kaggle/input/images/IMG/a_30.jpeg
+/kaggle/input/images/IMG/d_69.jpeg
+/kaggle/input/images/IMG/l_117.jpeg
+/kaggle/input/images/IMG/l_110.jpeg
+/kaggle/input/images/IMG/v_17.jpeg
+/kaggle/input/images/IMG/l_36.jpeg
+/kaggle/input/images/IMG/d_31.jpeg
+/kaggle/input/images/IMG/a_19.jpeg
+/kaggle/input/images/IMG/a_17.jpeg
+/kaggle/input/images/IMG/l_68.jpeg
+/kaggle/input/images/IMG/v_10.jpeg
+/kaggle/input/images/IMG/l_100.jpeg
+/kaggle/input/images/IMG/l_25.jpeg
+/kaggle/input/images/IMG/l_23.jpeg
+/kaggle/input/images/IMG/v_65.jpeg
+/kaggle/input/images/IMG/f_20.jpeg
+/kaggle/input/images/IMG/a_4.jpeg
+/kaggle/input/images/IMG/v_64.jpeg
+/kaggle/input/images/IMG/v_19.jpeg
+/kaggle/input/images/IMG/v_24.jpeg
+/kaggle/input/images/IMG/d_54.jpeg
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="s1">&#39;../input/images/IMG/&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../input/images/train.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+
+<span class="n">images</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">height</span> <span class="o">=</span> <span class="mi">240</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">newsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">dim</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="n">source_path</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">source_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">current_path</span> <span class="o">=</span> <span class="s1">&#39;../input/images/IMG/&#39;</span> <span class="o">+</span> <span class="n">filename</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">current_path</span><span class="p">)</span>
+    <span class="c1">#image = Image.open(current_path)</span>
+    <span class="c1">#image = image.resize(newsize)</span>
+    <span class="c1">#img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span>
+    <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">interpolation</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_AREA</span><span class="p">)</span>
+    <span class="n">images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">label</span> <span class="o">-</span> <span class="mf">1.0</span>
+    <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_valid</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Updated Image Shape: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Updated Image Shape: (240, 256, 3)
+(336, 240, 256, 3)
+(336,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.utils</span> <span class="k">import</span> <span class="n">np_utils</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">np_utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_valid</span> <span class="o">=</span> <span class="n">np_utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_valid</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_train</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>336
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X_valid</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>84
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_valid</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>84
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[[231 161  54]
+  [231 162  53]
+  [233 160  52]
+  ...
+  [237 212 186]
+  [237 212 186]
+  [237 212 186]]
+
+ [[233 161  54]
+  [233 161  53]
+  [234 161  52]
+  ...
+  [239 214 188]
+  [239 214 188]
+  [239 214 188]]
+
+ [[234 161  55]
+  [234 161  54]
+  [234 161  53]
+  ...
+  [239 215 189]
+  [239 215 189]
+  [239 215 189]]
+
+ ...
+
+ [[ 73  50  52]
+  [ 73  50  52]
+  [ 72  50  52]
+  ...
+  [ 72  51  50]
+  [ 72  51  50]
+  [ 72  51  50]]
+
+ [[ 72  50  52]
+  [ 72  50  52]
+  [ 72  50  52]
+  ...
+  [ 72  51  50]
+  [ 72  51  50]
+  [ 72  51  50]]
+
+ [[ 72  50  52]
+  [ 72  50  52]
+  [ 72  50  52]
+  ...
+  [ 72  51  50]
+  [ 72  51  50]
+  [ 72  51  50]]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1. 0. 0. 0. 0.]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Displaying a random image from the training dataset</span>
+<span class="n">index</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">))</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0. 0. 1. 0. 0.]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Shuffling the Dataset</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">shuffle</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">normalization</span><span class="p">(</span><span class="n">x_label</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x_label</span> <span class="o">/</span> <span class="mi">255</span> <span class="o">*</span> <span class="mf">0.8</span> <span class="o">+</span> <span class="mf">0.1</span>
+
+<span class="n">X_train</span> <span class="o">=</span>  <span class="n">normalization</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_valid</span> <span class="o">=</span> <span class="n">normalization</span><span class="p">(</span><span class="n">X_valid</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Lambda</span><span class="p">,</span> <span class="n">ELU</span><span class="p">,</span> <span class="n">Cropping2D</span><span class="p">,</span> <span class="n">Dropout</span><span class="p">,</span> <span class="n">Activation</span>
+<span class="kn">from</span> <span class="nn">keras.layers.convolutional</span> <span class="k">import</span> <span class="n">Convolution2D</span>
+<span class="kn">from</span> <span class="nn">keras.layers.pooling</span> <span class="k">import</span> <span class="n">MaxPool2D</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Model</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">BatchNormalization</span>
+<span class="kn">from</span> <span class="nn">keras.optimizers</span> <span class="k">import</span> <span class="n">Adam</span><span class="p">,</span> <span class="n">SGD</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Convolution2D</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">subsample</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">,</span>  <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">240</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Convolution2D</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">subsample</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Convolution2D</span><span class="p">(</span><span class="mi">48</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">subsample</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Convolution2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Convolution2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;elu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;elu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;elu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
+<span class="c1">#model.compile(loss=&#39;categorical_crossentropy&#39;, optimizer=Adam(lr=1.0e-4))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:2: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(24, (5, 5), activation=&#34;elu&#34;, input_shape=(240, 256,..., strides=(2, 2))`
+  
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: &#34;sequential_1&#34;
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 118, 126, 24)      1824      
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 57, 61, 36)        21636     
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 27, 29, 48)        43248     
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 25, 27, 64)        27712     
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 23, 25, 64)        36928     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 23, 25, 64)        0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 36800)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               3680100   
+_________________________________________________________________
+dense_2 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                510       
+_________________________________________________________________
+dense_4 (Dense)              (None, 5)                 55        
+=================================================================
+Total params: 3,817,063
+Trainable params: 3,817,063
+Non-trainable params: 0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:3: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(36, (5, 5), activation=&#34;elu&#34;, strides=(2, 2))`
+  This is separate from the ipykernel package so we can avoid doing imports until
+/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:4: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(48, (5, 5), activation=&#34;elu&#34;, strides=(2, 2))`
+  after removing the cwd from sys.path.
+/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:5: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation=&#34;elu&#34;)`
+  &#34;&#34;&#34;
+/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:6: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(64, (3, 3), activation=&#34;elu&#34;)`
+  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">1.0e-3</span><span class="p">),</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history_object</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nb_epoch</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;model.h5&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:1: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  &#34;&#34;&#34;Entry point for launching an IPython kernel.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 336 samples, validate on 84 samples
+Epoch 1/50
+336/336 [==============================] - 5s 16ms/step - loss: 5.1803 - accuracy: 0.2411 - val_loss: 1.8403 - val_accuracy: 0.3452
+Epoch 2/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.6706 - accuracy: 0.2589 - val_loss: 1.5154 - val_accuracy: 0.2976
+Epoch 3/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.4196 - accuracy: 0.4375 - val_loss: 1.6518 - val_accuracy: 0.2381
+Epoch 4/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.5648 - accuracy: 0.3095 - val_loss: 1.9856 - val_accuracy: 0.2262
+Epoch 5/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.5720 - accuracy: 0.3185 - val_loss: 1.5153 - val_accuracy: 0.3690
+Epoch 6/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.3148 - accuracy: 0.4345 - val_loss: 1.6290 - val_accuracy: 0.2976
+Epoch 7/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.2957 - accuracy: 0.4494 - val_loss: 1.3210 - val_accuracy: 0.3452
+Epoch 8/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.1383 - accuracy: 0.5446 - val_loss: 1.3344 - val_accuracy: 0.5000
+Epoch 9/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.0374 - accuracy: 0.6101 - val_loss: 1.2356 - val_accuracy: 0.5595
+Epoch 10/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.9750 - accuracy: 0.6369 - val_loss: 1.1710 - val_accuracy: 0.4881
+Epoch 11/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.9054 - accuracy: 0.6399 - val_loss: 1.2174 - val_accuracy: 0.5714
+Epoch 12/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.8581 - accuracy: 0.6667 - val_loss: 1.1078 - val_accuracy: 0.5714
+Epoch 13/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.8093 - accuracy: 0.6845 - val_loss: 1.0395 - val_accuracy: 0.6190
+Epoch 14/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.8454 - accuracy: 0.7113 - val_loss: 1.1473 - val_accuracy: 0.5952
+Epoch 15/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.8252 - accuracy: 0.6994 - val_loss: 1.1802 - val_accuracy: 0.5595
+Epoch 16/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.7551 - accuracy: 0.7173 - val_loss: 1.0656 - val_accuracy: 0.6548
+Epoch 17/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.6823 - accuracy: 0.7738 - val_loss: 1.0635 - val_accuracy: 0.5833
+Epoch 18/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.6739 - accuracy: 0.7827 - val_loss: 1.0761 - val_accuracy: 0.6310
+Epoch 19/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.6614 - accuracy: 0.7679 - val_loss: 1.0419 - val_accuracy: 0.6071
+Epoch 20/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.6033 - accuracy: 0.8095 - val_loss: 1.0517 - val_accuracy: 0.6905
+Epoch 21/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.5436 - accuracy: 0.8274 - val_loss: 0.9267 - val_accuracy: 0.6786
+Epoch 22/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.5356 - accuracy: 0.8393 - val_loss: 0.9281 - val_accuracy: 0.6905
+Epoch 23/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.4641 - accuracy: 0.8661 - val_loss: 0.9811 - val_accuracy: 0.7024
+Epoch 24/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.4163 - accuracy: 0.8750 - val_loss: 0.9855 - val_accuracy: 0.7262
+Epoch 25/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3921 - accuracy: 0.8958 - val_loss: 0.8575 - val_accuracy: 0.7143
+Epoch 26/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3592 - accuracy: 0.9226 - val_loss: 1.0137 - val_accuracy: 0.6429
+Epoch 27/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3354 - accuracy: 0.9107 - val_loss: 1.0023 - val_accuracy: 0.7738
+Epoch 28/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3080 - accuracy: 0.9107 - val_loss: 1.0226 - val_accuracy: 0.7500
+Epoch 29/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.2836 - accuracy: 0.9345 - val_loss: 1.0763 - val_accuracy: 0.7500
+Epoch 30/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.2989 - accuracy: 0.9167 - val_loss: 1.1982 - val_accuracy: 0.7143
+Epoch 31/50
+336/336 [==============================] - 1s 2ms/step - loss: 1.0542 - accuracy: 0.6786 - val_loss: 1.3216 - val_accuracy: 0.6548
+Epoch 32/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.7307 - accuracy: 0.7589 - val_loss: 1.1350 - val_accuracy: 0.6786
+Epoch 33/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3730 - accuracy: 0.8780 - val_loss: 1.1693 - val_accuracy: 0.6786
+Epoch 34/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.4034 - accuracy: 0.8601 - val_loss: 1.2440 - val_accuracy: 0.7262
+Epoch 35/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.3058 - accuracy: 0.9018 - val_loss: 1.3325 - val_accuracy: 0.7619
+Epoch 36/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.2550 - accuracy: 0.9286 - val_loss: 1.2316 - val_accuracy: 0.6905
+Epoch 37/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.2436 - accuracy: 0.9345 - val_loss: 1.3291 - val_accuracy: 0.7024
+Epoch 38/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.2075 - accuracy: 0.9524 - val_loss: 1.1397 - val_accuracy: 0.7619
+Epoch 39/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.1302 - accuracy: 0.9792 - val_loss: 1.2396 - val_accuracy: 0.7500
+Epoch 40/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.1008 - accuracy: 0.9881 - val_loss: 1.2440 - val_accuracy: 0.7262
+Epoch 41/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0787 - accuracy: 0.9911 - val_loss: 1.3675 - val_accuracy: 0.7500
+Epoch 42/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0685 - accuracy: 0.9940 - val_loss: 1.4064 - val_accuracy: 0.7500
+Epoch 43/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0612 - accuracy: 0.9970 - val_loss: 1.3767 - val_accuracy: 0.7500
+Epoch 44/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0580 - accuracy: 0.9940 - val_loss: 1.5069 - val_accuracy: 0.7381
+Epoch 45/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0549 - accuracy: 0.9940 - val_loss: 1.4899 - val_accuracy: 0.7619
+Epoch 46/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0501 - accuracy: 0.9940 - val_loss: 1.4946 - val_accuracy: 0.7262
+Epoch 47/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0477 - accuracy: 0.9940 - val_loss: 1.5050 - val_accuracy: 0.7500
+Epoch 48/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0472 - accuracy: 0.9940 - val_loss: 1.5449 - val_accuracy: 0.7381
+Epoch 49/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0445 - accuracy: 0.9940 - val_loss: 1.5948 - val_accuracy: 0.7500
+Epoch 50/50
+336/336 [==============================] - 1s 2ms/step - loss: 0.0425 - accuracy: 0.9940 - val_loss: 1.6322 - val_accuracy: 0.7381
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="n">loaded_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;model.h5&#39;</span><span class="p">)</span>
+<span class="n">loaded_model</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">input_shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(None, 240, 256, 3)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">load_model</span>
+<span class="n">im</span> <span class="o">=</span> <span class="s1">&#39;../input/images/IMG/d_34.jpeg&#39;</span> 
+<span class="n">imag</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
+<span class="n">imag</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">imag</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">interpolation</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_AREA</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s2">&quot;model.h5&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">imag</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">imag</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[28]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(1, 240, 256, 3)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">imag</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1.0000000e+00 0.0000000e+00 3.4994166e-33 0.0000000e+00 0.0000000e+00]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+</body>
+
+ 
+
+
+</html>
+
