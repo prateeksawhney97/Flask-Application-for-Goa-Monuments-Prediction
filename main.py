@@ -47,12 +47,6 @@ def success():
 		return render_template("success.html", name = final_text, img_in = full_filename, img = full_filename_processed)
 		
 
-@app.route('/info', methods = ['POST'])
-def info():
-	if request.method == 'POST':
-		return render_template("info.html")
-
-
 
 if __name__ == '__main__':  
 	app.run(host="127.0.0.1",port=8080,debug=True)  
