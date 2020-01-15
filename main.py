@@ -46,7 +46,7 @@ def success():
 		if(value==pred_0):
 			txt = "Ajoba Temple, Goa"
 			desc = "Located at the entrance of Keri (or Querim) beach in Goa. It is a small temple but quite interesting on the sands of the beach. Keri beach is the northernmost beach of Goa. Thereafter Goa ends and Maharastra starts."
-			made = ""
+			made = "A beautiful temple painted in turquoise and orange, located on the shores of Keri beach in Pernem. The much-famed jatra of Ajoba devasthan at Keri-Pernem happens in the first week of February. Devotees from Goa and neighbouring states, throng to the temple to witness this."
 		elif(value==pred_1):
 			txt = "Shanta Durga Temple, Goa"
 			desc = "Shri Shantadurga Temple is a Private temple complex belonging to Goud Saraswat Brahmin community. It is 30 km from Panaji at the foothill of Kavalem village in Ponda Taluka, Goa, India. H.H.Shrimad Swamiji of ShriKavale Math is Spiritual head Of Shree Shantadurga Saunsthan, Kavale."
