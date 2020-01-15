@@ -50,7 +50,7 @@ def success():
 		elif(value==pred_1):
 			txt = "Shanta Durga Temple, Goa"
 			desc = "Shri Shantadurga Temple is a Private temple complex belonging to Goud Saraswat Brahmin community. It is 30 km from Panaji at the foothill of Kavalem village in Ponda Taluka, Goa, India. H.H.Shrimad Swamiji of ShriKavale Math is Spiritual head Of Shree Shantadurga Saunsthan, Kavale."
-			made = ""
+			made = "Located at the foothills of Kavlem village in Ponda district of Goa, the Shree Shantadurga temple is one of the popular pilgrimage centers in Goa. The temple was initially located at Cavelossim but when it was being destroyed by the Portuguese in 1564, the deity was shifted to Kavlem. A small laterite mud shrine was built and the deity was installed here and was converted into a beautiful temple in the next few years."
 		elif(value==pred_2):
 			txt = "Aguada Fort, Goa"
 			desc = "Fort Aguada is a well-preserved seventeenth-century Portuguese fort, along with a lighthouse, standing in Goa, India, on Sinquerim Beach, overlooking the Arabian Sea."
