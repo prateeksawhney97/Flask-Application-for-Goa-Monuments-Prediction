@@ -58,7 +58,7 @@ def success():
 		elif(value==pred_3):
 			txt = "Our Lady of the Immaculate Conception Church, Goa"
 			desc = "The Our Lady of the Immaculate Conception Church is located in Panjim, Goa, India. The Church conducts mass every day in English, Konkani, and Portuguese. The colonial Portuguese Baroque style church was first built in 1541 as a chapel on a hill side overlooking the city of Panjim."
-			made = ""
+			made = "Not all of Goa’s ancient churches are concentrated in Velha Goa. A notable exception is the Our Lady of Immaculate Conception Church which is located in Panjim. True to its name, the façade of this church is painted an immaculate, sparkling white. To the untrained eye, this might even believe the actual age and antiquity of this church that goes back to 500+ years."
 		elif(value==pred_4):
 			txt = "Viceroys Arch, Goa"
 			desc = "Brick & stone archway dating to 16th century, built over a road leading from river to town."
