@@ -54,7 +54,7 @@ def success():
 		elif(value==pred_2):
 			txt = "Aguada Fort, Goa"
 			desc = "Fort Aguada is a well-preserved seventeenth-century Portuguese fort, along with a lighthouse, standing in Goa, India, on Sinquerim Beach, overlooking the Arabian Sea."
-			made = ""
+			made = "The old Portuguese lighthouse, which stands in the middle of Fort Aguada, was built in 1864 and once housed the great bell from the Church of St Augustine in Old Goa, before it was moved to the Church of Our Lady of the Immaculate Conception in Panaji. It’s the oldest of its sort in Asia, but is usually not open to the public."
 		elif(value==pred_3):
 			txt = "Our Lady of the Immaculate Conception Church, Goa"
 			desc = "The Our Lady of the Immaculate Conception Church is located in Panjim, Goa, India. The Church conducts mass every day in English, Konkani, and Portuguese. The colonial Portuguese Baroque style church was first built in 1541 as a chapel on a hill side overlooking the city of Panjim."
