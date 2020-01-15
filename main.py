@@ -62,8 +62,8 @@ def success():
 		elif(value==pred_4):
 			txt = "Viceroys Arch, Goa"
 			desc = "Brick & stone archway dating to 16th century, built over a road leading from river to town."
+			
 		final_text = 'Results after Detecting Monument in Input Image'
-			made = ""
 		return render_template("success.html", name = final_text, img = full_filename, out_1 = txt, out_2 = desc, out_3 = made)
 		
 
