@@ -62,7 +62,7 @@ def success():
 		elif(value==pred_4):
 			txt = "Viceroys Arch, Goa"
 			desc = "Brick & stone archway dating to 16th century, built over a road leading from river to town."
-			
+			made = "Established in 1599 by Viceroy Francisco da Gama, the Viceroy’s Arch is made up of laterite and green granite. The archway was once the main street for entering Old Goa. The arch was built to commemorate the memory of the famous explorer – Vasco da Gama. The arch is embellished with an imposing statue of Vasco da Gama on the river side and with the statue of St. Catherine on the other side. The original arch collapsed in 1948 and was rebuilt in 1954."
 		final_text = 'Results after Detecting Monument in Input Image'
 		return render_template("success.html", name = final_text, img = full_filename, out_1 = txt, out_2 = desc, out_3 = made)
 		
