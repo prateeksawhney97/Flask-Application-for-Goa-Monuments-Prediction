@@ -12,6 +12,9 @@ Hence there must be a mobile application which renders information about the mon
 
 ![Basilica_of_Bom_Jesus_-_Old_Goa](https://user-images.githubusercontent.com/34116562/72215966-9445c180-3540-11ea-9d09-97b193d42eb5.jpg)
 
+### Source Code:
+#### GitHub: https://github.com/prateeksawhney97/Goa-Monument-Prediction
+
 ### Solution: 
 
 A web application is developed using Flask and deployed on Google Cloud Platform. The user can upload the image of the monument and click the predict button. The background machine learning model will predict its name and various other details. The user can navigate to the Source Code and also the GitHub profile.
@@ -27,5 +30,28 @@ A web application is developed using Flask and deployed on Google Cloud Platform
 
 ### Screenshots:
 
-### Source Code:
-#### GitHub: https://github.com/prateeksawhney97/Goa-Monument-Prediction
+### Model Architecture Used:
+
+
+
+| Layer         		|     Output Shape	        					| Param |
+|:---------------------:|:---------------------------------------------:|:---------------------------------------------:| 
+| Convolution Layer 1   	| (None, 118, 126, 24 	|  1824 |
+| Convolution Layer 2	    | (None, 57, 61, 36)    									|  21636 |
+| Convolution Layer 3		| (None, 27, 29, 48) |      43248 									|
+| Convolution Layer 4				| (None, 25, 27, 64)      |  		27712							|
+|	Convolution Layer 5					|		(None, 23, 25, 64)			|					36928		|
+| Dropout Layer 1              |     (None, 23, 25, 64)   |   0    |
+| Flatten Layer 1              |        (None, 36800)  |  0    |
+|	Dense Layer 1				|		(None, 100)		|		3680100	|
+| Dense Layer 2		| (None, 50)     |   	5050								|
+|	Dense Layer 3				|		(None, 10)						|   510  |
+| Dense Layer 4		| (None, 5)   |     				55			|
+
+- Total params: 3,817,063
+- Trainable params: 3,817,063
+- Non-trainable params: 0
+
+
+##### Accuracy:  0.9940
+##### Validation Accuracy: 0.7381
