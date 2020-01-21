@@ -30,10 +30,21 @@ A web application is developed using Flask and deployed on Google Cloud Platform
 
 ### Screenshots:
 
+#### Home Page:
+
 ![Screenshot from 2020-01-21 19-43-05](https://user-images.githubusercontent.com/34116562/72812295-43904000-3c87-11ea-975e-73451f8c882f.png)
+
+#### Image Uploaded:
+
 ![Screenshot from 2020-01-21 19-43-25](https://user-images.githubusercontent.com/34116562/72812300-44c16d00-3c87-11ea-8e6b-c5b14d744929.png)
+
+#### Prediction:
+
 ![Screenshot from 2020-01-21 19-43-39](https://user-images.githubusercontent.com/34116562/72812304-468b3080-3c87-11ea-997c-3a8062b863f8.png)
 ![Screenshot from 2020-01-21 19-43-42](https://user-images.githubusercontent.com/34116562/72812313-47bc5d80-3c87-11ea-81a3-95153a819f99.png)
+
+#### Jupyter Notebook:
+
 ![Screenshot from 2020-01-21 19-43-51](https://user-images.githubusercontent.com/34116562/72812324-4c811180-3c87-11ea-816a-78a3b23f0eae.png)
 
 
