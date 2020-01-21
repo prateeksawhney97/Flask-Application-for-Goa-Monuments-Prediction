@@ -16,6 +16,15 @@ Hence there must be a mobile application which renders information about the mon
 
 A web application is developed using Flask and deployed on Google Cloud Platform. The user can upload the image of the monument and click the predict button. The background machine learning model will predict its name and various other details. The user can navigate to the Source Code and also the GitHub profile.
 
+### Monuments Included:
+
+1. Ajoba Temple Goa
+2. Shanta Durga Temple
+3. Fort Aguada
+4. Our Lady of the Immaculate Conception Church, Goa
+5. Viceroys Arch, Goa
+
+
 ### Screenshots:
 
 ### Source Code:
