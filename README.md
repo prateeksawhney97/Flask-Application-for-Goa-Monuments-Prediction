@@ -10,6 +10,10 @@ Hence there must be a mobile application which renders information about the mon
 
 ![Basilica_of_Bom_Jesus_-_Old_Goa](https://user-images.githubusercontent.com/34116562/72215966-9445c180-3540-11ea-9d09-97b193d42eb5.jpg)
 
+### Solution: 
+
+A web application is developed using Flask and deployed on Google Cloud Platform. The user can upload the image of the monument and click the predict button. The background machine learning model will predict its name and various other details. The user can navigate to the Source Code and also the GitHub profile.
+
 ### Screenshots:
 
 ### Source Code:
